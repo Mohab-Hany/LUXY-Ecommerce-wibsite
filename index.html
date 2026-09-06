@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXE — Premium E-Commerce</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo">LUX<span>E</span>.</a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#home" class="active">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#categories">Categories</a>
+          <a href="#offer">Deals</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Theme Toggle (pure CSS, checkbox hack) -->
+          <input type="checkbox" id="themeToggle" class="css-toggle" />
+          <label
+            class="icon-btn theme-toggle-btn"
+            for="themeToggle"
+            title="Toggle Theme"
+            aria-label="Toggle Theme"
+          >
+            <i class="fas fa-moon icon-moon"></i>
+            <i class="fas fa-sun icon-sun"></i>
+          </label>
+
+          <!-- Search Toggle -->
+          <input type="checkbox" id="searchToggle" class="css-toggle" />
+          <label class="icon-btn" for="searchToggle" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </label>
+
+          <a href="#loginModal" class="icon-btn" aria-label="Account">
+            <i class="fas fa-user"></i>
+          </a>
+
+          <!-- Cart Toggle -->
+          <input type="checkbox" id="cartToggle" class="css-toggle" />
+          <label class="icon-btn cart-btn" for="cartToggle" aria-label="Cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="badge">0</span>
+          </label>
+
+          <!-- Mobile Menu Toggle -->
+          <input type="checkbox" id="mobileMenuToggle" class="css-toggle" />
+          <label
+            class="mobile-menu-btn"
+            for="mobileMenuToggle"
+            aria-label="Menu"
+          >
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </div>
+
+      <!-- Search Bar Dropdown (no live filtering without JS) -->
+      <div class="search-overlay" id="searchOverlay">
+        <div class="search-box container">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products (e.g. Hoodie, Sunglasses, Watch, Sneakers)..."
+          />
+          <label class="close-search" for="searchToggle">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div
+        class="hero-bg-image"
+        style="background-image: url(&quot;images/hero/hero.jpg&quot;)"
+      ></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-subtitle">NEW SEASON 2026</span>
+        <h1 class="hero-title">
+          ELEVATE YOUR <br /><span class="text-gradient">LUXURY STYLE</span>
+        </h1>
+        <p class="hero-description">
+          Discover curated apparel, luxury accessories, and everyday essentials
+          engineered with high performance and bold style.
+        </p>
+        <div class="hero-btns">
+          <a href="#shop" class="btn btn-primary"
+            >Shop Now <i class="fas fa-arrow-right"></i
+          ></a>
+          <a href="#categories" class="btn btn-outline">Explore Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Shop By Category</h2>
+          <p class="section-subtitle">
+            Browse through our top trending departments
+          </p>
+        </div>
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="category-img-box">
+              <img src="images/categories/fashion.jpg" alt="Fashion" />
+            </div>
+            <div class="category-info">
+              <h3>Fashion</h3>
+              <a href="#shop" class="cat-link"
+                >View Products <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-box">
+              <img src="images/categories/shoes.jpg" alt="Shoes" />
+            </div>
+            <div class="category-info">
+              <h3>Shoes</h3>
+              <a href="#shop" class="cat-link"
+                >View Products <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-box">
+              <img src="images/categories/accessories.jpg" alt="Accessories" />
+            </div>
+            <div class="category-info">
+              <h3>Accessories</h3>
+              <a href="#shop" class="cat-link"
+                >View Products <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-box">
+              <img src="images/categories/watches.jpg" alt="Watches" />
+            </div>
+            <div class="category-info">
+              <h3>Watches</h3>
+              <a href="#shop" class="cat-link"
+                >View Products <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-box">
+              <img src="images/categories/bags.jpg" alt="Bags" />
+            </div>
+            <div class="category-info">
+              <h3>Bags</h3>
+              <a href="#shop" class="cat-link"
+                >View Products <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-img-box">
+              <img
+                src="images/categories/new-collection.jpg"
+                alt="New Collection"
+              />
+            </div>
+            <div class="category-info">
+              <h3>New Collection</h3>
+              <a href="#shop" class="cat-link"
+                >View Products <i class="fas fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Shop / Featured Products Section -->
+    <section class="products section" id="shop">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-subtitle">Handpicked selection just for you</p>
+        </div>
+
+        <!-- Controls: Filter & Sort (pure CSS, radio hack) -->
+        <div class="shop-controls">
+          <div class="filter-group">
+            <input
+              type="radio"
+              name="catFilter"
+              id="f-all"
+              class="css-toggle"
+              checked
+            />
+            <label for="f-all" class="filter-btn">All</label>
+            <input
+              type="radio"
+              name="catFilter"
+              id="f-fashion"
+              class="css-toggle"
+            />
+            <label for="f-fashion" class="filter-btn">Fashion</label>
+            <input
+              type="radio"
+              name="catFilter"
+              id="f-shoes"
+              class="css-toggle"
+            />
+            <label for="f-shoes" class="filter-btn">Shoes</label>
+            <input
+              type="radio"
+              name="catFilter"
+              id="f-accessories"
+              class="css-toggle"
+            />
+            <label for="f-accessories" class="filter-btn">Accessories</label>
+            <input
+              type="radio"
+              name="catFilter"
+              id="f-watches"
+              class="css-toggle"
+            />
+            <label for="f-watches" class="filter-btn">Watches</label>
+            <input
+              type="radio"
+              name="catFilter"
+              id="f-bags"
+              class="css-toggle"
+            />
+            <label for="f-bags" class="filter-btn">Bags</label>
+          </div>
+
+          <div class="controls-right">
+            <div class="price-filter filter-group">
+              <input
+                type="radio"
+                name="priceFilter"
+                id="p-all"
+                class="css-toggle"
+                checked
+              />
+              <label for="p-all" class="filter-btn">All Prices</label>
+              <input
+                type="radio"
+                name="priceFilter"
+                id="p-under25"
+                class="css-toggle"
+              />
+              <label for="p-under25" class="filter-btn">Under $25</label>
+              <input
+                type="radio"
+                name="priceFilter"
+                id="p-25to50"
+                class="css-toggle"
+              />
+              <label for="p-25to50" class="filter-btn">$25 - $50</label>
+              <input
+                type="radio"
+                name="priceFilter"
+                id="p-over50"
+                class="css-toggle"
+              />
+              <label for="p-over50" class="filter-btn">$50+</label>
+            </div>
+            <div class="sort-wrapper filter-group">
+              <input
+                type="radio"
+                name="sortOption"
+                id="s-default"
+                class="css-toggle"
+                checked
+              />
+              <label for="s-default" class="filter-btn">Default</label>
+              <input
+                type="radio"
+                name="sortOption"
+                id="s-price-low"
+                class="css-toggle"
+              />
+              <label for="s-price-low" class="filter-btn">Price ↑</label>
+              <input
+                type="radio"
+                name="sortOption"
+                id="s-price-high"
+                class="css-toggle"
+              />
+              <label for="s-price-high" class="filter-btn">Price ↓</label>
+              <input
+                type="radio"
+                name="sortOption"
+                id="s-rating-high"
+                class="css-toggle"
+              />
+              <label for="s-rating-high" class="filter-btn">Top Rated</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- 1 -->
+          <div class="product-card" data-id="1" data-category="Fashion">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/tshirt.jpg"
+                alt="Classic Cotton T-Shirt"
+              />
+              <span class="discount-badge">-29%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Fashion</span>
+              <h3 class="product-title">
+                <a href="#product-1">Classic Cotton T-Shirt</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.6)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$24.99</span>
+                <span class="old-price">$35.00</span>
+              </div>
+              <a href="#product-1" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="product-card" data-id="2" data-category="Fashion">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/hoodie.jpg"
+                alt="Tactical Street Hoodie"
+              />
+              <span class="discount-badge">-29%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Fashion</span>
+              <h3 class="product-title">
+                <a href="#product-2">Tactical Street Hoodie</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.8)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$49.99</span>
+                <span class="old-price">$70.00</span>
+              </div>
+              <a href="#product-2" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="product-card" data-id="3" data-category="Fashion">
+            <div class="product-img-wrapper">
+              <img src="images/products/jeans.jpg" alt="Slim Fit Dark Jeans" />
+              <span class="discount-badge">-27%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Fashion</span>
+              <h3 class="product-title">
+                <a href="#product-3">Slim Fit Dark Jeans</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.5)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$39.99</span>
+                <span class="old-price">$55.00</span>
+              </div>
+              <a href="#product-3" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="product-card" data-id="4" data-category="Shoes">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/sneakers.jpg"
+                alt="Futuristic Sneakers"
+              />
+              <span class="discount-badge">-25%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Shoes</span>
+              <h3 class="product-title">
+                <a href="#product-4">Futuristic Sneakers</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.9)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$89.99</span>
+                <span class="old-price">$120.00</span>
+              </div>
+              <a href="#product-4" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="product-card" data-id="5" data-category="Fashion">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/dress.jpg"
+                alt="Elegant Evening Dress"
+              />
+              <span class="discount-badge">-26%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Fashion</span>
+              <h3 class="product-title">
+                <a href="#product-5">Elegant Evening Dress</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.7)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$69.99</span>
+                <span class="old-price">$95.00</span>
+              </div>
+              <a href="#product-5" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="product-card" data-id="6" data-category="Bags">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/handbag.jpg"
+                alt="Luxury Leather Handbag"
+              />
+              <span class="discount-badge">-27%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Bags</span>
+              <h3 class="product-title">
+                <a href="#product-6">Luxury Leather Handbag</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.8)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$79.99</span>
+                <span class="old-price">$110.00</span>
+              </div>
+              <a href="#product-6" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="product-card" data-id="7" data-category="Fashion">
+            <div class="product-img-wrapper">
+              <img src="images/products/jacket.jpg" alt="Urban Biker Jacket" />
+              <span class="discount-badge">-25%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Fashion</span>
+              <h3 class="product-title">
+                <a href="#product-7">Urban Biker Jacket</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.9)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$119.99</span>
+                <span class="old-price">$160.00</span>
+              </div>
+              <a href="#product-7" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="product-card" data-id="8" data-category="Watches">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/watch.jpg"
+                alt="Obsidian Stealth Watch"
+              />
+              <span class="discount-badge">-25%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Watches</span>
+              <h3 class="product-title">
+                <a href="#product-8">Obsidian Stealth Watch</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.9)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$149.99</span>
+                <span class="old-price">$200.00</span>
+              </div>
+              <a href="#product-8" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="product-card" data-id="9" data-category="Accessories">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/sunglasses.jpg"
+                alt="Polarized Dark Sunglasses"
+              />
+              <span class="discount-badge">-33%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Accessories</span>
+              <h3 class="product-title">
+                <a href="#product-9">Polarized Dark Sunglasses</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.4)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$19.99</span>
+                <span class="old-price">$30.00</span>
+              </div>
+              <a href="#product-9" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="product-card" data-id="10" data-category="Bags">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/backpack.jpg"
+                alt="Travel Leather Backpack"
+              />
+              <span class="discount-badge">-27%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Bags</span>
+              <h3 class="product-title">
+                <a href="#product-10">Travel Leather Backpack</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.6)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$54.99</span>
+                <span class="old-price">$75.00</span>
+              </div>
+              <a href="#product-10" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 11 -->
+          <div class="product-card" data-id="11" data-category="Accessories">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/cap.jpg"
+                alt="Streetwear Snapback Cap"
+              />
+              <span class="discount-badge">-27%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Accessories</span>
+              <h3 class="product-title">
+                <a href="#product-11">Streetwear Snapback Cap</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.3)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$15.99</span>
+                <span class="old-price">$22.00</span>
+              </div>
+              <a href="#product-11" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+          <!-- 12 -->
+          <div class="product-card" data-id="12" data-category="Shoes">
+            <div class="product-img-wrapper">
+              <img
+                src="images/products/shoes.jpg"
+                alt="Classic Formal Leather Shoes"
+              />
+              <span class="discount-badge">-26%</span>
+            </div>
+            <div class="product-details">
+              <span class="product-category">Shoes</span>
+              <h3 class="product-title">
+                <a href="#product-12">Classic Formal Leather Shoes</a>
+              </h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i> <span>(4.7)</span>
+              </div>
+              <div class="product-price-row">
+                <span class="current-price">$84.99</span>
+                <span class="old-price">$115.00</span>
+              </div>
+              <a href="#product-12" class="btn btn-primary btn-block"
+                ><i class="fas fa-shopping-cart"></i> View Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section class="special-offer section" id="offer">
+      <div class="container offer-container">
+        <div class="offer-content">
+          <span class="offer-badge">LIMITED TIME DEALS</span>
+          <h2>Summer Sale — Up to 50% Off</h2>
+          <p>
+            Grab your favorite apparel and luxury street items before the timer
+            runs out. Exclusive items on discount.
+          </p>
+
+          <div class="countdown-timer" id="countdown">
+            <div class="time-box">
+              <span id="days">02</span><label>Days</label>
+            </div>
+            <div class="time-box">
+              <span id="hours">14</span><label>Hours</label>
+            </div>
+            <div class="time-box">
+              <span id="minutes">00</span><label>Mins</label>
+            </div>
+            <div class="time-box">
+              <span id="seconds">00</span><label>Secs</label>
+            </div>
+          </div>
+
+          <a href="#shop" class="btn btn-primary">Shop Deals</a>
+        </div>
+        <div class="offer-img">
+          <img src="images/products/jacket.jpg" alt="Special Offer Product" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section">
+      <div class="container features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-truck"></i></div>
+          <h3>Free Shipping</h3>
+          <p>Free delivery on all orders over $99.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Secure Payment</h3>
+          <p>Safe and encrypted checkout process.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-undo"></i></div>
+          <h3>Easy Returns</h3>
+          <p>30-day effortless return policy.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Customer support anytime you need.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter section" id="contact">
+      <div class="container newsletter-box">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+          Get exclusive early access to new drops and promo codes directly in
+          your inbox.
+        </p>
+        <form id="newsletterForm" class="newsletter-form">
+          <div class="input-group">
+            <input
+              type="email"
+              id="newsletterEmail"
+              placeholder="Enter your email address..."
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+          <small id="newsletterMsg" class="form-msg"></small>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo">LUX<span>E</span>.</a>
+          <p>
+            Your premier destination for minimalist lifestyle and luxury
+            apparel. Designed for supreme quality.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#offer">Deals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Luxury Street, Fashion
+            City
+          </p>
+          <p><i class="fas fa-envelope"></i> support@luxe.com</p>
+          <p><i class="fas fa-phone"></i> +1 800 555 0199</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LUXE E-Commerce. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Drawer (pure CSS, checkbox hack) -->
+    <label
+      class="overlay"
+      for="cartToggle"
+      id="overlay"
+      aria-hidden="true"
+    ></label>
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3>Your Cart (<span id="cartDrawerCount">0</span>)</h3>
+        <label class="close-cart" for="cartToggle">
+          <i class="fas fa-times"></i>
+        </label>
+      </div>
+      <div class="cart-body" id="cartBody">
+        <p class="no-products">Your cart is currently empty.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total:</span>
+          <span class="total-amount" id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn btn-primary btn-block">Checkout Now</button>
+      </div>
+    </div>
+
+    <!-- Product Details Modals (pure CSS, :target hack) -->
+    <div class="modal" id="product-1">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img
+              src="images/products/tshirt.jpg"
+              alt="Classic Cotton T-Shirt"
+            />
+          </div>
+          <div>
+            <span class="product-category">Fashion</span>
+            <h2>Classic Cotton T-Shirt</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.6)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$24.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$35.00</span>
+            </div>
+            <p class="modal-desc">
+              Premium dark breathable cotton t-shirt with modern slim-fit
+              aesthetic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-2">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img
+              src="images/products/hoodie.jpg"
+              alt="Tactical Street Hoodie"
+            />
+          </div>
+          <div>
+            <span class="product-category">Fashion</span>
+            <h2>Tactical Street Hoodie</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.8)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$49.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$70.00</span>
+            </div>
+            <p class="modal-desc">
+              Heavyweight dark hoodie with utility zippers and water-resistant
+              fleece finish.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-3">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img src="images/products/jeans.jpg" alt="Slim Fit Dark Jeans" />
+          </div>
+          <div>
+            <span class="product-category">Fashion</span>
+            <h2>Slim Fit Dark Jeans</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.5)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$39.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$55.00</span>
+            </div>
+            <p class="modal-desc">
+              Durable stretch denim jeans in charcoal dark wash with modern cut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-4">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img src="images/products/sneakers.jpg" alt="Futuristic Sneakers" />
+          </div>
+          <div>
+            <span class="product-category">Shoes</span>
+            <h2>Futuristic Sneakers</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.9)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$89.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$120.00</span>
+            </div>
+            <p class="modal-desc">
+              Ultra-cushioned black running sneakers with modern translucent
+              soles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-5">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img src="images/products/dress.jpg" alt="Elegant Evening Dress" />
+          </div>
+          <div>
+            <span class="product-category">Fashion</span>
+            <h2>Elegant Evening Dress</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.7)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$69.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$95.00</span>
+            </div>
+            <p class="modal-desc">
+              Sophisticated black evening dress tailored for minimalist luxury
+              events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-6">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img
+              src="images/products/handbag.jpg"
+              alt="Luxury Leather Handbag"
+            />
+          </div>
+          <div>
+            <span class="product-category">Bags</span>
+            <h2>Luxury Leather Handbag</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.8)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$79.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$110.00</span>
+            </div>
+            <p class="modal-desc">
+              Crafted genuine leather handbag featuring gold metallic hardware.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-7">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img src="images/products/jacket.jpg" alt="Urban Biker Jacket" />
+          </div>
+          <div>
+            <span class="product-category">Fashion</span>
+            <h2>Urban Biker Jacket</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.9)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$119.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$160.00</span>
+            </div>
+            <p class="modal-desc">
+              Matte black leather biker jacket engineered for supreme durability
+              and warmth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-8">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img src="images/products/watch.jpg" alt="Obsidian Stealth Watch" />
+          </div>
+          <div>
+            <span class="product-category">Watches</span>
+            <h2>Obsidian Stealth Watch</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.9)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$149.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$200.00</span>
+            </div>
+            <p class="modal-desc">
+              Sapphire glass water-resistant dark wrist watch with stainless
+              steel mesh band.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-9">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img
+              src="images/products/sunglasses.jpg"
+              alt="Polarized Dark Sunglasses"
+            />
+          </div>
+          <div>
+            <span class="product-category">Accessories</span>
+            <h2>Polarized Dark Sunglasses</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.4)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$19.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$30.00</span>
+            </div>
+            <p class="modal-desc">
+              UV400 anti-glare polarized lenses with matte lightweight titanium
+              frame.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-10">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img
+              src="images/products/backpack.jpg"
+              alt="Travel Leather Backpack"
+            />
+          </div>
+          <div>
+            <span class="product-category">Bags</span>
+            <h2>Travel Leather Backpack</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.6)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$54.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$75.00</span>
+            </div>
+            <p class="modal-desc">
+              Multi-compartment laptop backpack with hidden security anti-theft
+              pockets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-11">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img src="images/products/cap.jpg" alt="Streetwear Snapback Cap" />
+          </div>
+          <div>
+            <span class="product-category">Accessories</span>
+            <h2>Streetwear Snapback Cap</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.3)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$15.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$22.00</span>
+            </div>
+            <p class="modal-desc">
+              Minimalist dark cotton cap with adjustable metal closure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="product-12">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <div class="product-modal-grid">
+          <div class="product-modal-img">
+            <img
+              src="images/products/shoes.jpg"
+              alt="Classic Formal Leather Shoes"
+            />
+          </div>
+          <div>
+            <span class="product-category">Shoes</span>
+            <h2>Classic Formal Leather Shoes</h2>
+            <div class="product-rating" style="margin: 10px 0">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i> (4.7)
+            </div>
+            <div class="product-price-row">
+              <span class="current-price" style="font-size: 1.5rem"
+                >$84.99</span
+              >
+              <span class="old-price" style="font-size: 1.1rem">$115.00</span>
+            </div>
+            <p class="modal-desc">
+              Polished black Oxford formal shoes crafted with premium leather.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal (pure CSS, :target hack) -->
+    <div class="modal" id="loginModal">
+      <a href="#!" class="modal-backdrop" aria-label="Close"></a>
+      <div class="modal-content login-modal-content">
+        <a href="#!" class="close-modal"><i class="fas fa-times"></i></a>
+        <h2>Welcome Back</h2>
+        <p>Login to manage your orders & profile</p>
+        <form id="loginForm" class="login-form">
+          <div class="form-control">
+            <label>Email Address</label>
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="name@example.com"
+              required
+            />
+            <small class="error-msg" id="emailError"></small>
+          </div>
+          <div class="form-control">
+            <label>Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="••••••••"
+              required
+              minlength="6"
+            />
+            <small class="error-msg" id="passwordError"></small>
+          </div>
+          <div class="form-actions">
+            <label class="remember-me"
+              ><input type="checkbox" /> Remember me</label
+            >
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Sign In
+          </button>
+          <p class="switch-auth">
+            Don't have an account? <a href="#">Create Account</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
